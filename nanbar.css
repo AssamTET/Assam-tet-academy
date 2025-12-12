@@ -1,0 +1,154 @@
+/* Navbar Wrapper */
+    .exam-nav2 {
+      background-color: #fff;
+      border-bottom: 3px solid #e5e7eb;
+      padding-top: 100px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+     
+    }
+
+
+    /* Responsive Grid */
+    .exam-grid {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    }
+
+    /* Card Styles */
+    .exam-card {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: #f3f4f6;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .exam-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .exam-link:hover .exam-card {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .exam-card:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Icon Box */
+    .icon-box {
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 25px;
+      flex-shrink: 0;
+    }
+
+    /* Info Text */
+    .info h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .info p {
+      font-size: 11px;
+      color: #6b7280;
+      font-weight: 500;
+    }
+
+    /* Gradient Themes */
+     /* 1. BLUE */
+.exam-card.blue {
+  background: linear-gradient(to right, #eaf2ff, #dce8ff);
+}
+.exam-card.blue .icon-box {
+  background: #2563eb;
+}
+
+/* 2. GREEN */
+.exam-card.green {
+  background: linear-gradient(to right, #e7f9ed, #d3f7dc);
+}
+.exam-card.green .icon-box {
+  background: #16a34a;
+}
+
+/* 3. PURPLE */
+.exam-card.purple {
+  background: linear-gradient(to right, #f3e8ff, #e5dbff);
+}
+.exam-card.purple .icon-box {
+  background: #7c3aed;
+}
+
+/* 4. ORANGE */
+.exam-card.orange {
+  background: linear-gradient(to right, #fff1e6, #ffe4d2);
+}
+.exam-card.orange .icon-box {
+  background: #f97316;
+}
+
+/* 5. PINK */
+.exam-card.pink {
+  background: linear-gradient(to right, #ffe6ec, #ffd9e4);
+}
+.exam-card.pink .icon-box {
+  background: #ec4899;
+}
+
+/* ⭐ 6. YELLOW */
+.exam-card.yellow {
+  background: linear-gradient(to right, #fffce6, #fff7cc);
+}
+.exam-card.yellow .icon-box {
+  background: #eab308;
+}
+
+/* ⭐ 7. INDIGO */
+.exam-card.indigo {
+  background: linear-gradient(to right, #eef0ff, #e0e4ff);
+}
+.exam-card.indigo .icon-box {
+  background: #4f46e5;
+}
+
+/* ⭐ 8. CYAN */
+.exam-card.cyan {
+  background: linear-gradient(to right, #e6fcff, #d1f8ff);
+}
+.exam-card.cyan .icon-box {
+  background: #06b6d4;
+}
+
+
+    /* Responsive Rules */
+    @media (max-width: 768px) {
+      .exam-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .exam-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+
+    

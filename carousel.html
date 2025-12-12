@@ -1,0 +1,128 @@
+
+    <style>
+        .carousel-wrapper {
+            width: 100%;
+            position: relative;
+         }
+ a {
+            text-decoration: none;
+            outline: none;
+        }
+        .carousel-container {
+            overflow: hidden;
+            width: 100%;
+            padding: 20px;
+           
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: 100%;
+        }
+
+        .slide {
+            flex: 0 0 100%; /* Mobile = 1 slide */
+            padding: 5px;   /* ★ 5px padding added */
+            box-sizing: border-box;
+        }
+
+        /* Tablet: 2 slides */
+        @media (min-width: 768px) {
+            .slide {
+                flex: 0 0 50%;
+            }
+        }
+
+        /* Desktop: 4 slides */
+        @media (min-width: 1024px) {
+            .slide {
+                flex: 0 0 25%;
+            }
+        }
+
+        /* Card FULL view 16:9 */
+        .ratio {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 12px;
+            overflow: hidden;
+            display: block;
+        }
+
+        .ratio img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+    </style>
+
+<div class="carousel-wrapper">
+    <div class="carousel-container">
+        <div class="carousel-track" id="carouselTrack">
+
+            <div class="slide">
+                <a href="https://www.youtube.com/playlist?list=PLKtFHlypckp5Pd9g-HJhXv94HQmbyZF9-" target="_blank">
+                    <div class="ratio"><img src="/assets/photos/assameseplaylist.png"></div>
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="https://www.youtube.com/playlist?list=PLKtFHlypckp7LJ04p1lv_iZSLd6jCdP98" target="_blank">
+                    <div class="ratio"><img src="/assets/photos/cdpplaylist.png"></div>
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="https://www.youtube.com/playlist?list=PLKtFHlypckp7LJ04p1lv_iZSLd6jCdP98" target="_blank">
+                    <div class="ratio"><img src="/assets/photos/mathsplaylist.png"></div>
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="https://your-link.com" target="_blank">
+                    <div class="ratio"><img src="/assets/photos/allmarathon.png"></div>
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="https://your-link.com" target="_blank">
+                    <div class="ratio"><img src="/assets/photos/assamese1pyqplaylist.png"></div>
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="https://your-link.com" target="_blank">
+                    <div class="ratio"><img src="/assets/photos/assamese2pyqplaylist.png"></div>
+                </a>
+            </div>
+            
+             <div class="slide">
+                <a href="https://your-link.com" target="_blank">
+                    <div class="ratio"><img src="/assets/photos/assamesemarathonpyq.png"></div>
+                </a>
+            </div>
+            
+             <div class="slide">
+                <a href="https://your-link.com" target="_blank">
+                    <div class="ratio"><img src="/assets/photos/assamesemarathontopic.png"></div>
+                </a>
+            </div>
+            
+             <div class="slide">
+                <a href="https://your-link.com" target="_blank">
+                    <div class="ratio"><img src="/assets/photos/mathspyqplaylist.png"></div>
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://your-link.com" target="_blank">
+                    <div class="ratio"><img src="/assets/photos/mathsmarathon.png"></div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
