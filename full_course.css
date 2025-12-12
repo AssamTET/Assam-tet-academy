@@ -1,0 +1,209 @@
+/* ====== GENERAL SECTION STYLES ====== */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.course-section {
+  text-align: center;
+      background: white;
+      
+     
+}
+
+.section-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+  padding-top: 20px;
+}
+ 
+.section-header p {
+  color: #475569;
+  font-size: 1rem;
+}
+
+/* ====== COURSE GRID (BASE) ====== */
+.course-grid {
+  display: grid;
+  gap: 20px;
+  padding: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+/* ====== COURSE CARD ====== */
+.course-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.course-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* ====== TAGS ====== */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  justify-content: center;
+}
+
+.tag {
+  padding: 5px 5px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+/* Color Variants */
+.tag-blue { background: #2563eb; }
+.tag-green { background: #16a34a; }
+.tag-purple { background: #9333ea; }
+.tag-orange { background: #f97316; }
+.tag-pink { background: #ec4899; }
+.tag-red { background: #dc2626; }
+.tag-yellow { background: #eab308; color: white; }
+
+/* Hover */
+.tag:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+ 
+/* ====== PRICE + DISCOUNT ====== */
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.price-left {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+
+.course-label{
+font-size: 15px;
+font-weight: 700;
+}
+.price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.old-price {
+  font-size: 0.9rem;
+  color: #6b7280;
+  text-decoration: line-through;
+}
+
+.discount {
+  background: #ffebee;
+  color: #c62828;
+  font-weight: 600;
+  padding: 5px 8px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+ 
+/* ====== BUTTON ====== */
+.buy-btn {
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  background: #2618fb;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.98rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buy-btn:hover {
+  background: #3598d3;
+}
+
+/* ====== ICONS ====== */
+.course-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.course-header i {
+  font-size: 18px;
+  color: #004aad;
+  background: #e3f2fd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.course-card:hover .course-header i {
+  background: #d0e7ff;
+  transform: scale(1.05);
+}
+
+/* ====== RESPONSIVE GRID ====== */
+
+/* Small Screens (up to 640px): 1 card */
+@media (max-width: 640px) {
+  .course-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Tablets (641px – 1023px): 2–3 cards */
+@media (min-width: 641px) and (max-width: 1023px) {
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Laptops (1024px – 1279px): 3–4 cards */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .course-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktops (1280px and above): 4–5 cards */
+@media (min-width: 1280px) {
+  .course-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+.course_description{
+  font-size: 15px;
+  color: black;
+  padding: 10px;
+  font-weight: 500;
+}
+.course_dis{
+color: #004aad;
+font-weight: 700;
+}

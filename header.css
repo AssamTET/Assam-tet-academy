@@ -1,0 +1,194 @@
+    /* ===== HEADER ===== */
+    header {
+      width: 100%;
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      transition: all 0.4s ease;
+      
+    }
+
+    header.scrolled {
+      background: rgba(255, 255, 255, 0.85);
+      box-shadow: 0 0 20px rgba(0,120,255,0.4);
+      backdrop-filter: blur(12px);
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    /* ===== BRAND (LOGO + TITLE) ===== */
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .brand img {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      transition: color 0.4s ease, text-shadow 0.4s ease, transform 0.4s ease;
+    }
+
+    .brandh1 {
+      font-size: 30px;
+      font-family: serif;
+      color: #0078ff;
+      font-weight:900;
+      transition: color 0.4s ease, text-shadow 0.4s ease, transform 0.4s ease;
+    }
+    .brandh2 {
+      font-size: 18px;
+      color: black;
+      font-weight: 700;
+      transition: color 0.4s ease, text-shadow 0.4s ease, transform 0.4s ease;
+    }
+
+    .brand:hover img {
+      transform: rotate(-6deg) scale(1.08);
+      filter: drop-shadow(0 0 10px rgba(0,120,255,0.5));
+    }
+
+    .brand3 :hover {
+      color: #005bdb;
+      text-shadow: 0 0 10px rgba(0,120,255,0.6), 0 0 20px rgba(0,120,255,0.4);
+      transform: scale(1.05);
+      transform: rotate(-6deg) scale(1.08);
+      filter: drop-shadow(0 0 10px rgba(0,120,255,0.5));
+    }
+   
+
+    /* ===== NAVIGATION (renamed to .navbar) ===== */
+    .navbar {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #0b87d3;
+      font-weight: 500;
+      position: relative;
+      padding: 5px 0;
+      font-size: 16px;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #0078ff;
+      text-shadow: 0 0 8px rgba(0,120,255,0.5), 0 0 12px rgba(0,120,255,0.3);
+    }
+
+    .navbar a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 2px;
+      background: #0078ff;
+      box-shadow: 0 0 10px rgba(0,120,255,0.5);
+      transition: width 0.3s ease;
+    }
+
+    .navbar a:hover::after {
+      width: 100%;
+    }
+
+    /* ===== APP DOWNLOAD BUTTONS ===== */
+    .app-buttons {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .app-buttons a img {
+      height: 35px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .app-buttons a:hover img {
+      transform: scale(1.07);
+      filter: drop-shadow(0 0 8px rgba(0,120,255,0.5));
+    }
+
+    /* ===== HAMBURGER MENU ===== */
+    .menu-toggle {
+      display: none;
+      font-size: 1.3rem;
+      cursor: pointer;
+      color: black;
+      background: none;
+      border: none;
+      transition: transform 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    .menu-toggle:hover {
+      transform: scale(1.1);
+      text-shadow: 0 0 8px rgba(0,120,255,0.4);
+    }
+
+    /* ===== MOBILE NAVIGATION ===== */
+    @media (max-width: 900px) {
+      .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #fff;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        padding: 15px 8%;
+      }
+.brandh1 {
+      font-size: 25px;
+      color: #0078ff;
+      font-weight: 700;
+      transition: color 0.4s ease, text-shadow 0.4s ease, transform 0.4s ease;
+    }
+      .navbar.active {
+        display: flex;
+        animation: slideDown 0.3s ease;
+      }
+
+      @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .app-buttons {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 15px;
+      }
+       .header-container{
+           padding: 10px;
+           
+       }
+         .brandh1 {
+      font-size: 21px;
+
+    }
+    .brandh2 {
+      font-size: 14px;
+
+    }
+    }
+    
